@@ -1,0 +1,26 @@
+{
+  "name": "backend-exemple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "clean": "rmdir /s /q dist || echo.",
+    "prebuild": "npm run clean",
+    "build": "mkdir dist && xcopy /E /I src dist\\ && copy package.json dist\\"
+  },
+  "keywords": [],
+  "author": "glopmts",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "mkdirp": "^3.0.1",
+    "nodemon": "^3.1.10"
+  }
+}

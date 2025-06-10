@@ -282,6 +282,4 @@ app.use((req, res, next) => {
 
 ---
 
-```
 Com este guia, você deve ser capaz de hospedar com sucesso seu backend Node.js na Vercel. Se encontrar problemas, consulte a [documentação oficial da Vercel](https://vercel.com/docs) ou abra uma issue neste repositório.
-```

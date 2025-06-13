@@ -183,9 +183,10 @@ export default async function handler(req, res) {
   const { body } = req;
 
   // Resposta
-  return res.status(200).json({
+  res.status(200).json({
     message: `Olá ${body.name}, você acabou de analisar o corpo da requisição!`,
   });
+ return;
 }
 ```
 

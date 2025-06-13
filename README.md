@@ -186,7 +186,6 @@ export default async function handler(req, res) {
   res.status(200).json({
     message: `Olá ${body.name}, você acabou de analisar o corpo da requisição!`,
   });
- return;
 }
 ```
 
